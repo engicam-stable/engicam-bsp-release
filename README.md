@@ -13,7 +13,7 @@ Download the BSP source:
     $: PATH=${PATH}:~/bin
     $: mkdir -p ~/yocto/honister
     $: cd ~/yocto/honister
-    $: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-honister -m imx-5.15.5-1.0.0.xml
+    $: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-honister -m imx-5.15.5-1.0.0.xml
     $: sed -i '/^<\/manifest>.*/i <project name="meta-engicam-nxp" path="sources\/meta-engicam-nxp" remote= "engicam" revision="honister"\/>' ./.repo/manifests/imx-5.15.5-1.0.0.xml
     $: sed -i '/^<manifest>.*/a <remote fetch="https:\/\/github.com\/engicam-stable" name="engicam" \/>' ./.repo/manifests/imx-5.15.5-1.0.0.xml
     $: repo sync
