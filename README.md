@@ -11,16 +11,18 @@ Install the repo utility:
 Download the BSP source:
 
     $: PATH=${PATH}:~/bin
-    $: mkdir -p ~/yocto/kirkstone-st
-    $: cd ~/yocto/kirkstone-st
-    $: curl https://raw.githubusercontent.com/engicam-stable/engicam-bsp-release/kirkstone-st/Dockerfile > Dockerfile
-    $: repo init -u https://github.com/engicam-stable/engicam-bsp-release.git -b kirkstone-st -m engicam-bsp-release.xml    
+    $: mkdir -p ~/yocto/kirkstone_22.11-st
+    $: cd ~/yocto/kirkstone_22.11-st
+    $: curl https://raw.githubusercontent.com/engicam-stable/engicam-bsp-release/kirkstone_22.11-st/Dockerfile > Dockerfile
+    $: repo init -u https://github.com/engicam-stable/engicam-bsp-release.git -b kirkstone_22.11-st -m engicam-bsp-release.xml    
     $: repo sync
 
-| yocto-codename  |         modules       |
-|:---------------:|:---------------------:|
-|  kirkstone-st   |  MicroGEA STM32MP135  | 
-|                 |     GEA STM32MP135 	  |
+|   yocto-codename      |         modules       |
+|:---------------------:|:---------------------:|
+|  kirkstone_22.11-st   |  MicroGEA STM32MP135  | 
+|                       |    GEA STM32MP135 	|
+|                       |  MicroGEA STM32MP157 	|
+|                       |    iCORE STM32MP157 	|
 
 ## Install Docker Engine on Ubuntu
 
