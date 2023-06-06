@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/JeffyCN/" name="rockchip" />
+  <remote fetch="https://github.com/engicam-stable" name="engicam" />
+
+
+  <project name="poky" remote="yocto" revision="f53ab3a2ff206a130cdc843839dd0ea5ec4ad02f" upstream="kirkstone"/>
+  <project name="meta-openembedded" path="poky/meta-openembedded" remote="oe" revision="9e539aaed608a03b1128a7361426703d8f9ba705" upstream="kirkstone"/>
+  <project name="meta-rockchip" path="poky/meta-rockchip" remote="rockchip" revision="14f41dafb59166992b078aeb65eae2163c6db0f9" upstream="kirkstone"/>
+  <project name="meta-engicam-rockchip" path="poky/meta-engicam-rockchip" remote= "engicam" revision="kirkstone"/>
+</manifest>
