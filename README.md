@@ -24,7 +24,7 @@ Enter Yocto folder and launch the script setting enviroment variables:
 
 where ``<machine-name>`` corresponds to the module for which the operative system image will be compiled and ``<build-dir-name>`` is the bulding directory name chosen by the user, as in the following example:
 
-	 DISTRO=eng-imx-xwayland MACHINE=imx8mp-icore source imx-setup-release.sh -b build
+	 DISTRO=fsl-imx-xwayland  MACHINE=imx8mp-icore source imx-setup-release.sh -b build
 
 where a directory named ``build`` is created and enviroment variables are set to compile images for the module ``i.Core MX8M Plus``. Please notice that the available ``<machine-name>`` correspond to the names of the relative configuration files in ``/sources/meta-engicam-nxp/conf/machine``.
 
