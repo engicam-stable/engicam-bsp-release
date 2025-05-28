@@ -15,6 +15,7 @@
   <remote name="imx"         fetch="https://github.com/nxp-imx"/>
   <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
 
+  <remote name="ezurio" fetch="https://github.com/Ezurio"/>
   <remote name="engicam" fetch="https://github.com/engicam-stable"/>
 
   <project name="poky" remote="yp" path="sources/poky" revision="200d12b6a58ad961d60a7774ca0f7a9d29498724" upstream="scarthgap"/>
@@ -43,5 +44,6 @@
   <project name="meta-nxp-connectivity" remote="imx" path="sources/meta-nxp-connectivity" revision="refs/tags/rel_imx_6.6.52_2.2.0" upstream="imx_matter_2024_q3-post"/>
   <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="refs/tags/rel_imx_6.6.52_2.2.0" upstream="scarthgap-6.6.52-2.2.0"/>
   <project name="meta-engicam-nxp" path="sources/meta-engicam-nxp" remote= "engicam" revision="scarthgap"/>
+  <project name="meta-summit-radio" path="sources/meta-summit-radio" remote="ezurio" revision="lrd-12.0.113.x"/>
 </manifest>
 
