@@ -16,5 +16,5 @@
   <project name="meta-st-stm32mp-tsn-acm" path="layers/meta-st/meta-st-stm32mp-tsn-acm" revision="fb8a9c1cefbdaa819e9187879b80583f1784a8a9"/>
   <project name="meta-st-stm32mp-tsn-swch" path="layers/meta-st/meta-st-stm32mp-tsn-swch" revision="539bcc57821440014e8b33a02aec9a2e691ae8a6"/>
   <project name="openembedded-core" path="layers/openembedded-core" remote="oe" revision="236ac1b43308df722a78d3aa20aef065dfae5b2b"/>
-  <project name="meta-engicam-st" path="layers/meta-engicam-st" remote= "engicam" revision="c751679633f83196bd1dbb04073372a04b3a80bc"/>
+  <project name="meta-engicam-st" path="layers/meta-engicam-st" remote= "engicam" revision="e62ab053202c29da4ab2100f7ddc337a894a1ec5"/>
 </manifest>
