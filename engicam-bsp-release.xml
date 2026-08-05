@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default revision="scarthgap" sync-j="4"/>
+  <default revision="walnascar" sync-j="4"/>
 
   <remote name="yp"          fetch="https://git.yoctoproject.org"/>
   <remote name="oe"          fetch="https://github.com/openembedded"/>
@@ -14,32 +14,36 @@
 
   <remote name="imx"         fetch="https://github.com/nxp-imx"/>
   <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
+
+  <remote name="ezurio" fetch="https://github.com/Ezurio"/>
   <remote name="engicam" fetch="https://github.com/engicam-stable" />
 
-  <project name="poky" remote="yp" path="sources/poky" revision="02eacd385eca7aa9cf25aaaa61427aa9c126e0bc" upstream="scarthgap"/>
-  <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="a72010b414ee3d73888ac9cb4e310e8f05e13aea" upstream="scarthgap"/>
-  <project name="meta-clang" remote="kraj" path="sources/meta-clang" revision="66414c17ae60e489bef9a97031323e92c247fbe1" upstream="scarthgap"/>
+  <project name="poky" remote="yp" path="sources/poky" revision="d0b46a6624ec9c61c47270745dd0b2d5abbe6ac1" upstream="walnascar" />
+  <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="07330a98cf93806b7a4e0170a541b94962ff3960" upstream="walnascar" />
+  <project name="meta-clang" remote="kraj" path="sources/meta-clang" revision="003cba92e982bdd565a6889f28799f8bba14957e" upstream="walnascar" />
 
-  <project name="fsl-community-bsp-base" remote="community" path="sources/base" revision="84df0b1ff416c6739472f7f7eadff04fa90d38f6" upstream="scarthgap">
-    <linkfile dest="README" src="README"/>
+  <project name="fsl-community-bsp-base" remote="community" path="sources/base" revision="1705821f266d87688e7b3fb92d5535d1725aefe6" upstream="master" >
     <linkfile dest="setup-environment" src="setup-environment"/>
   </project>
-  <project name="meta-freescale" remote="community" path="sources/meta-freescale" revision="41b923e59e048b9b2942ff737a4ddac386954c62" upstream="scarthgap"/>
-  <project name="meta-freescale-3rdparty" remote="community" path="sources/meta-freescale-3rdparty" revision="8b61684f0b1ba8bacdf3a69d993445e9791d4932" upstream="scarthgap"/>
-  <project name="meta-freescale-distro" remote="community" path="sources/meta-freescale-distro" revision="158cc55b6ee30d09957b380859dba52c0f6af68d" upstream="scarthgap"/>
+  <project name="meta-freescale" remote="community" path="sources/meta-freescale" revision="3d2781ad200846183ee3f3391f49512d0ef1b529" upstream="walnascar" />
+  <project name="meta-freescale-3rdparty" remote="community" path="sources/meta-freescale-3rdparty" revision="5ba0c7cfdba9bc7c4495f0cdf1c195f45b7164a6" upstream="walnascar" />
+  <project name="meta-freescale-distro" remote="community" path="sources/meta-freescale-distro" revision="b9c3536b68271c420fe5de36fc284781ceaa32ab" upstream="walnascar" />
+  <project name="meta-freescale-ml" remote="community" path="sources/meta-freescale-ml" revision="e55df3c0f515ba62fcc2cc4c8ddee80b99706a40" upstream="walnascar" />
 
-  <project name="meta-arm" remote="yp" path="sources/meta-arm" revision="8aa8a1f17f5b64bc691544f989f04fc83df98adb" upstream="scarthgap"/>
-  <project name="meta-qt6" remote="qt" path="sources/meta-qt6" revision="dc13e1bfda4a4757a08c2d6673bc4bac012c4a80" upstream="6.7.0" />
-  <project name="meta-browser" remote="ossystems" path="sources/meta-browser" revision="dc31889c0899971def535dc1c040edf18bc16691" />
-  <project name="meta-security" remote="yp" path="sources/meta-security" revision="11ea91192d43d7c2b0b95a93aa63ca7e73e38034" upstream="scarthgap"/>
-  <project name="meta-timesys" remote="timesys" path="sources/meta-timesys" revision="b96d8de949939ad08094f71ed6ed4f88eaf41d5e" upstream="master"/>
-  <project name="meta-virtualization" remote="yp" path="sources/meta-virtualization" revision="1a547c0aa0d75c4143cbb66de6e653d51cdc8bda" upstream="scarthgap"/>
+  <project name="meta-arm" remote="yp" path="sources/meta-arm" revision="21894cc2ea3197e6bfc1a56d889f757a09dc8b31" upstream="walnascar" />
+  <project name="meta-qt6" remote="qt" path="sources/meta-qt6" revision="00c3bd954341a2a755fdee6b978af952f51793e7" upstream="6.8.3" />
+  <project name="meta-browser" remote="ossystems" path="sources/meta-browser" revision="f988d616d37ddf160d3d747ed54d0a66d549f499" />
+  <project name="meta-security" remote="yp" path="sources/meta-security" revision="1f7eeb8e84811fa79b98f236ade42dc52d44cfc6" upstream="walnascar"/>
+  <project name="meta-timesys" remote="timesys" path="sources/meta-timesys" revision="3adeff0c300011fb7e4130dac5c54dc2e6e4fb2b" upstream="master" />
+  <project name="meta-virtualization" remote="yp" path="sources/meta-virtualization" revision="38008d99d5bedc7d9769b9e95e3d6019a2df1698" upstream="walnascar" />
 
-  <project name="meta-imx" remote="imx" path="sources/meta-imx" revision="refs/tags/rel_imx_6.6.23_2.0.0" upstream="scarthgap-6.6.23-2.0.0">
-     <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
-     <linkfile src="README" dest="README-IMXBSP"/>
+  <project name="meta-imx" remote="imx" path="sources/meta-imx" revision="refs/tags/rel_imx_6.12.49_2.2.0" upstream="walnascar-6.12.49-2.2.0">
+     <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh" />
+     <linkfile src="README.md" dest="README.md" />
   </project>
-  <project name="meta-matter" remote="imx" path="sources/meta-matter" revision="refs/tags/rel_imx_6.6.23-2.0.0" upstream="imx_matter_2024_q1-post" />
-  <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="refs/tags/rel_imx_6.6.23_2.0.0" upstream="scarthgap-6.6.23-2.0.0" />
-  <project name="meta-engicam-nxp" path="sources/meta-engicam-nxp" remote= "engicam" revision="scarthgap"/>
+  <project name="meta-nxp-connectivity" remote="imx" path="sources/meta-nxp-connectivity" revision="refs/tags/rel_imx_6.12.49_2.2.0" upstream="imx_matter_2025_q3-post" />
+  <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="refs/tags/rel_imx_6.12.49_2.2.0" upstream="walnascar-6.12.49-2.2.0" />
+
+  <project name="meta-summit-radio" path="sources/meta-summit-radio" remote="ezurio" revision="lrd-13.98.12.x"/>
+  <project name="meta-engicam-nxp" path="sources/meta-engicam-nxp" remote= "engicam" revision="walnascar"/>
 </manifest>

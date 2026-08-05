@@ -11,9 +11,9 @@ Install the repo utility:
 Download the BSP source:
 
     $: PATH=${PATH}:~/bin
-    $: mkdir -p ~/yocto/scarthgap
-    $: cd ~/yocto/scarthgap
-    $: repo init -u https://github.com/engicam-stable/engicam-bsp-release.git -b scarthgap-nxp -m engicam-bsp-release.xml
+    $: mkdir -p ~/yocto/walnascar
+    $: cd ~/yocto/walnascar
+    $: repo init -u https://github.com/engicam-stable/engicam-bsp-release.git -b walnascar-nxp -m engicam-bsp-release.xml
     $: repo sync
 
 ## Set enviroment variables
@@ -40,7 +40,7 @@ Add with bitbake the meta-engicam-nxp layer to the image layers:
 
 ## Compile and flash image on sdcard
 
-Compile the desired image with bitbake using the command (in this example we compile the recipe ``engicam-evaluation-imagea.bb`` for ``i.Core MX8M Plus``):
+Compile the desired image with bitbake using the command (in this example we compile the recipe ``engicam-evaluation-image-mx8.bb`` for ``i.Core MX8M Plus``):
 
 	bitbake engicam-evaluation-image
 
