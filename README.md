@@ -11,7 +11,6 @@ Install the repo utility:
 
 Download the BSP source:
 
-    $: mkdir iot-yocto; cd iot-yocto
     $: export PROJ_ROOT=`pwd`
     $: repo init -u https://github.com/engicam-stable/engicam-bsp-release.git -b rity-scarthgap-v25.1 -m engicam-bsp-release.xml
     $: repo sync
