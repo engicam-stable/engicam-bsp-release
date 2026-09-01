@@ -1,45 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-  <default revision="scarthgap" sync-j="4"/>
-
-  <remote name="yp"          fetch="https://git.yoctoproject.org"/>
-  <remote name="oe"          fetch="https://github.com/openembedded"/>
-  <remote name="kraj"        fetch="https://github.com/kraj"/>
-
-  <remote name="community"   fetch="https://github.com/Freescale"/>
-  <remote name="ossystems"   fetch="https://github.com/OSSystems"/>
-  <remote name="qt"          fetch="https://github.com/YoeDistro"/>
-  <remote name="timesys"     fetch="https://github.com/TimesysGit"/>
-
-  <remote name="imx"         fetch="https://github.com/nxp-imx"/>
-  <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
+	<remote name="rity" fetch="https://gitlab.com/mediatek/aiot/rity" />
+	<remote name="yocto" fetch="https://git.yoctoproject.org" />
+	<remote name="oe" fetch="https://git.openembedded.org" />
+	<remote name="github" fetch="https://github.com/" />
+	<remote name="collabora" fetch="https://gitlab.collabora.com/mediatek/aiot/rity" />
+	<remote name="asix" fetch="https://gitlab.com/asix_official/ax88179_series/mtk_genio/yocto/rity/" />
   <remote name="engicam" fetch="https://github.com/engicam-stable" />
 
-  <project name="poky" remote="yp" path="sources/poky" revision="02eacd385eca7aa9cf25aaaa61427aa9c126e0bc" upstream="scarthgap"/>
-  <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="a72010b414ee3d73888ac9cb4e310e8f05e13aea" upstream="scarthgap"/>
-  <project name="meta-clang" remote="kraj" path="sources/meta-clang" revision="66414c17ae60e489bef9a97031323e92c247fbe1" upstream="scarthgap"/>
+	<default revision="scarthgap" />
 
-  <project name="fsl-community-bsp-base" remote="community" path="sources/base" revision="84df0b1ff416c6739472f7f7eadff04fa90d38f6" upstream="scarthgap">
-    <linkfile dest="README" src="README"/>
-    <linkfile dest="setup-environment" src="setup-environment"/>
-  </project>
-  <project name="meta-freescale" remote="community" path="sources/meta-freescale" revision="41b923e59e048b9b2942ff737a4ddac386954c62" upstream="scarthgap"/>
-  <project name="meta-freescale-3rdparty" remote="community" path="sources/meta-freescale-3rdparty" revision="8b61684f0b1ba8bacdf3a69d993445e9791d4932" upstream="scarthgap"/>
-  <project name="meta-freescale-distro" remote="community" path="sources/meta-freescale-distro" revision="158cc55b6ee30d09957b380859dba52c0f6af68d" upstream="scarthgap"/>
-
-  <project name="meta-arm" remote="yp" path="sources/meta-arm" revision="8aa8a1f17f5b64bc691544f989f04fc83df98adb" upstream="scarthgap"/>
-  <project name="meta-qt6" remote="qt" path="sources/meta-qt6" revision="dc13e1bfda4a4757a08c2d6673bc4bac012c4a80" upstream="6.7.0" />
-  <project name="meta-browser" remote="ossystems" path="sources/meta-browser" revision="dc31889c0899971def535dc1c040edf18bc16691" />
-  <project name="meta-security" remote="yp" path="sources/meta-security" revision="11ea91192d43d7c2b0b95a93aa63ca7e73e38034" upstream="scarthgap"/>
-  <project name="meta-timesys" remote="timesys" path="sources/meta-timesys" revision="b96d8de949939ad08094f71ed6ed4f88eaf41d5e" upstream="master"/>
-  <project name="meta-virtualization" remote="yp" path="sources/meta-virtualization" revision="1a547c0aa0d75c4143cbb66de6e653d51cdc8bda" upstream="scarthgap"/>
-
-  <project name="meta-imx" remote="imx" path="sources/meta-imx" revision="refs/tags/rel_imx_6.6.23_2.0.0" upstream="scarthgap-6.6.23-2.0.0">
-     <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
-     <linkfile src="README" dest="README-IMXBSP"/>
-  </project>
-  <project name="meta-matter" remote="imx" path="sources/meta-matter" revision="refs/tags/rel_imx_6.6.23-2.0.0" upstream="imx_matter_2024_q1-post" />
-  <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="refs/tags/rel_imx_6.6.23_2.0.0" upstream="scarthgap-6.6.23-2.0.0" />
-  <project name="meta-engicam-nxp" path="sources/meta-engicam-nxp" remote= "engicam" revision="scarthgap"/>
+	<project name="meta-rity.git" path="src/meta-rity" remote="rity" revision="refs/tags/rity-scarthgap-v26.0" />
+	<project name="meta-mediatek-bsp.git" path="src/meta-mediatek-bsp" remote="rity" revision="refs/tags/rity-scarthgap-v26.0">
+		<linkfile src="scripts/genio-account-setup.py" dest="genio-account-setup.py" />
+	</project>
+	<project name="meta-mediatek-tsn.git" path="src/meta-mediatek-tsn" remote="rity" revision="refs/tags/rity-scarthgap-v26.0" />
+	<project name="meta-mediatek-demo.git" path="src/meta-mediatek-demo" remote="rity" revision="refs/tags/rity-scarthgap-v26.0" />
+	<project name="meta-mediatek-bluedroid.git" path="src/meta-mediatek-bluedroid" remote="rity" revision="refs/tags/rity-scarthgap-v26.0" />
+	<project name="meta-nn.git" path="src/meta-nn" remote="rity" revision="refs/tags/rity-scarthgap-v26.0" />
+	<project name="poky.git" path="src/poky" remote="yocto" revision="d4576e3c081a7ee7b57d48421c4c4f491cb4defe" />
+	<project name="meta-arm.git" path="src/meta-arm" remote="yocto" revision="a81c19915b5b9e71ed394032e9a50fd06919e1cd" />
+	<project name="meta-openembedded" path="src/meta-openembedded" remote="oe" revision="ae7dfb12245c7f9b9a353499e2688015bd4e6413" />
+	<project name="meta-tensorflow.git" path="src/meta-tensorflow" remote="yocto" revision="eeee54cfa3c51c1fd99604a0d5f173096bdcf1da" />
+	<project name="meta-security" path="src/meta-security" remote="yocto" revision="b13f1705d723650de61277670c8a76aadea4cfdd" />
+	<project name="kraj/meta-clang.git" path="src/meta-clang" remote="github" revision="b4532c75af7b1957b10cc4d5377fc4cfa0b1cbf6" />
+	<project name="meta-lts-mixins.git" path="src/meta-lts-mixins" remote="yocto" revision="96deb45139df027473faf0938fe006d33c45c375" />
+	<project name="meta-browser.git" path="src/meta-browser" remote="collabora" revision="f50e7319de63d6c36810cfbfac417e18233d430e" />
+	<project name="meta-asix" path="src/meta-asix" remote="asix" revision="d2551230c1fc4a0bebd2d2f0b5e3e9a0aee678e2" />
+  <project name="meta-engicam-mediatek" path="src/meta-engicam-mediatek" remote="engicam" revision="rity-scarthgap-v26.0" />
 </manifest>
