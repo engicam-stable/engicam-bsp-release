@@ -13,8 +13,7 @@
   <project name="meta-st-stm32mp" path="layers/meta-st/meta-st-stm32mp" revision="69a81db920e98ff3e3922f59eecbc50d91c31299"/>
   <project name="meta-st-stm32mp-addons" path="layers/meta-st/meta-st-stm32mp-addons" revision="97617f888513d89c4070f59bfdfa2a91e8175d5c"/>
   <project name="meta-st-scripts" path="layers/meta-st/scripts" revision="27b8b0df3b2f3515d5e51de65f54eff00ddacb82"/>
-  <project name="meta-st-stm32mp-tsn-acm" path="layers/meta-st/meta-st-stm32mp-tsn-acm" revision="fb8a9c1cefbdaa819e9187879b80583f1784a8a9"/>
-  <project name="meta-st-stm32mp-tsn-swch" path="layers/meta-st/meta-st-stm32mp-tsn-swch" revision="539bcc57821440014e8b33a02aec9a2e691ae8a6"/>
+  <project name="meta-st-stm32mp-tsn-swch" path="layers/meta-st/meta-st-stm32mp-tsn-swch" revision="cd95ee38f7a0f28809ea1fc2357b13f1399c4f02"/>
   <project name="openembedded-core" path="layers/openembedded-core" remote="oe" revision="236ac1b43308df722a78d3aa20aef065dfae5b2b"/>
   <project name="meta-engicam-st" path="layers/meta-engicam-st" remote= "engicam" revision="e62ab053202c29da4ab2100f7ddc337a894a1ec5"/>
 </manifest>
